@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'pretendard-regular';
+  src: url('/public/fonts/Pretendard-Regular.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-black';
+  src: url('/public/fonts/Pretendard-Black.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-bold';
+  src: url('/public/fonts/Pretendard-Bold.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-extraBold';
+  src: url('/public/fonts/Pretendard-ExtraBold.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-extraLight';
+  src: url('/public/fonts/Pretendard-ExtraLight.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-light';
+  src: url('/public/fonts/Pretendard-Light.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-medium';
+  src: url('/public/fonts/Pretendard-Medium.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-semiBold';
+  src: url('/public/fonts/Pretendard-SemiBold.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'pretendard-thin';
+  src: url('/public/fonts/Pretendard-Thin.woff') format('truetype');
+}
+
+html{
+  overflow-y: overlay;
+}
+
+body {
+  margin: 0;
+  font-family: 'pretendard-medium';
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'pretendard-medium';
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.right-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}

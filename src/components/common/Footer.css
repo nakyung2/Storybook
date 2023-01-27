@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size:xx-large; */
+  /* font-weight: bold; */
+  font-family: 'pretendard-light';
+  padding: 5%;
+}
+/* 
+.header-title-name {
+  color: #3AB0FF;
+} */
