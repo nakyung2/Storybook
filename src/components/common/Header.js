@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "../../stories/Button"
 
 import './Header.css'
 
@@ -19,12 +20,19 @@ const Header = (props) => {
           Woori Zip
         </NavLink> */}
         <div className="header-title">Woori Zip</div>
+        
         <NavLink
           onClick={()=> onNavBtn(true)}
           to="/blog"
           className={({ isActive }) => (isActive ? "link-active" : "link")}
         >
+          <Button
+  label="블로그"
+  onClick={() => {}}
+  primary
+>
           블로그
+      </Button>
       </NavLink>
 
       </div>
