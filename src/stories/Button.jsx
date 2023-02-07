@@ -1,16 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './button.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./button.css";
 
 /**
- * Primary UI component for user interaction
+ 버튼 UI
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary
+    ? "storybook-button--primary"
+    : "storybook-button--secondary";
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={["storybook-button", `storybook-button--${size}`, mode].join(
+        " "
+      )}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -20,31 +24,21 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
+  /** 제출버튼   */
   primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
+  /** 배경색 선택 */
   backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
+  /** 크기 선택  */
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  /** 버튼텍스트 입력 */
   label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
+  /** 클릭이벤트 */
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
-  size: 'medium',
+  size: "medium",
   onClick: undefined,
 };

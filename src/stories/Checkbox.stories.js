@@ -1,27 +1,21 @@
-import React from 'react';
-import Checkbox from './Checkbox';
+import React from "react";
+import Checkbox from "./Checkbox.js";
 
 export default {
     component: Checkbox,
-    title: 'components/Checkbox',
+    title: 'components/Checkbox'
 }
 
-const Template = (args) => <Checkbox {...args} />;
+const Template = (args) => <Checkbox {...args} />
 
 export const Default = Template.bind({});
 Default.args={
-    checkbox: {
         id : '1',
-        title : 'Default',
-        state : 'None',
-    }
+        state : 'none'
 }
 
 export const Checked = Template.bind({});
 Checked.args={
-    checkbox: {
-        id : '2',
-        title : 'Checked',
-        state : 'Checked',
-    }
+        id: '2',
+        state : 'checked'
 }

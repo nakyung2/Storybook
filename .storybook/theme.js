@@ -3,10 +3,10 @@ import { create } from "@storybook/theming";
 
 export default create({
   // theme dark or light
-//   base: "dark",
+  //   base: "dark",
 
   // brand logo
   brandImage: logo,
   brandName: "logo name",
-  brandUrl: "url"
+  brandUrl: "http://www.woorifis.com/",
 });
