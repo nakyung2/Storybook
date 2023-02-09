@@ -1,3 +1,6 @@
+// 깃허브 토큰
+// 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
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
